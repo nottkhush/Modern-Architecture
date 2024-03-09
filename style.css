@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1522743791393-522312deeebf?q=80&w=1958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+#main #nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0 70px;
+}
+
+#nav #nlinks{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 50px;
+}
+
+#nav h5{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+}
+
+#nlinks a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+#nlinks #active{
+    border-top: 2px;
+    color: white;
+}
+
+#nlinks #active::before{
+    content: "";
+    width: 40%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#nav i{
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#middle{
+    position: relative;
+    color: white;
+    width: 50%;
+    left: 11%;
+    top: 5%;
+}
+
+#middle #midtop h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 42px;
+    color: white;
+}
+
+#middle #midtop h3 sup{
+    font-size: 11px;
+    margin-left: 3px;
+}
+
+#midtop h1{
+    font-size: 70px;
+    width: 40px;
+    font-weight: 900;
+}
+
+#midbtm{
+    display: flex;
+    width: 100%;
+    margin-top: 45px;
+    gap: 100px;
+}
+
+#midbtm #line{
+    width: 400px;
+    height: 3px;
+    background-color: white;
+}
+
+#midbtm #para p{
+    font-weight: 400;
+}
+
+#main #bottom{
+    position: absolute;
+    color: black;
+    display: flex;
+    width: 70%;
+    background-color: white;
+    bottom: 0%;
+    height: 30%;
+    gap: 140px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 90px;
+}
+
+.format h4{
+    opacity: .5;
+    margin-top: 3px;
+}
+
+#main #right{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    left: 70%;
+    bottom: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#right i{
+    color: white;
+    font-size: 30px;
+}
